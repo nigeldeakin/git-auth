@@ -13,10 +13,11 @@ build:
         keyname: GITHB        
     - script:
         code: |
+          git checkout master
+          git pull
           touch t
           echo Hello >> t
           git add t
-          git checkout master
           git status
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
