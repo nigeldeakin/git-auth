@@ -1,0 +1,17 @@
+build:
+  box: alpine
+  steps:
+    - script:
+        name: Install 
+        code: |
+          apk add git
+          apl add openssh
+    - script:
+        code: |
+          touch t1
+          #git add t1
+          #git commit -m "Update"
+          git tag
+          git push
+          
+
