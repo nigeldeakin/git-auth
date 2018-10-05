@@ -6,8 +6,14 @@ build:
         code: |
           apk add git
           apk add openssh
+    - add-to-known_hosts:
+        hostname: github.com
+        fingerprint: nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8
     - script:
         code: |
+          echo cat /etc/ssh/ssh_known_hosts
+          cat /etc/ssh/ssh_known_hosts
+          echo ===
           touch t1
           #git add t1
           #git commit -m "Update"
@@ -15,6 +21,7 @@ build:
           git status
           git tag mygag
           git push  
+
           
           
 
