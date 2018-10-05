@@ -17,7 +17,7 @@ build:
           git add t
           git checkout master
           git status
-          git add -m "Update"
+          git commit -m "Update"
           git tag mygag
           git push  
 
