@@ -11,7 +11,9 @@ build:
           touch t1
           #git add t1
           #git commit -m "Update"
-          git tag
-          git push
+          git status
+          git tag mygag
+          git push  
+          
           
 
