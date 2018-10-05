@@ -13,7 +13,7 @@ build:
         keyname: GITHB        
     - script:
         code: |
-          git touch t
+          touch t
           git add t
           git checkout master
           git status
