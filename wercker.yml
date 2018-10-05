@@ -13,14 +13,11 @@ build:
         keyname: GITHB        
     - script:
         code: |
-          echo cat /etc/ssh/ssh_known_hosts
-          cat /etc/ssh/ssh_known_hosts
-          echo ===
-          touch t1
-          #git add t1
-          #git commit -m "Update"
+          git touch t
+          git add t
           git checkout master
           git status
+          git add -m "Update"
           git tag mygag
           git push  
 
