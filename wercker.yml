@@ -14,7 +14,6 @@ build:
     - script:
         code: |
           git checkout master
-          git pull
           touch t
           echo Hello >> t
           git add t
