@@ -9,6 +9,8 @@ build:
     - add-to-known_hosts:
         hostname: github.com
         fingerprint: nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8
+    - add-ssh-key:
+        keyname: GITHB        
     - script:
         code: |
           echo cat /etc/ssh/ssh_known_hosts
