@@ -11,6 +11,7 @@ build:
           touch t1
           #git add t1
           #git commit -m "Update"
+          git checkout master
           git status
           git tag mygag
           git push  
