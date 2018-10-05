@@ -14,6 +14,7 @@ build:
     - script:
         code: |
           touch t
+          echo Hello >> t
           git add t
           git checkout master
           git status
