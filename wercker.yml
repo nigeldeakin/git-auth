@@ -5,7 +5,7 @@ build:
         name: Install 
         code: |
           apk add git
-          apl add openssh
+          apk add openssh
     - script:
         code: |
           touch t1
